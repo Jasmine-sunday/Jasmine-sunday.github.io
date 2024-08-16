@@ -1,2 +1,6 @@
 # Jasmine-sunday.github.io
-# Jasmine's Profile Page
+_Jasmine's Profile Page_
+**TO DO LIST**
+*Food
+--1. Apple
+--2. ~~Orange~~
