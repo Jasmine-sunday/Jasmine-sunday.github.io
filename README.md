@@ -5,4 +5,4 @@ _Jasmine's Profile Page_
 
 * Food
 1. Apple
-~~2. Orange~~
+2. ~~Orange~~
