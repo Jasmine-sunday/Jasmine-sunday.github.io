@@ -1,0 +1,57 @@
+.portfolio-section {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 24px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* Project Card */
+.project-card {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-card img {
+  width: 360px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.project-content {
+  max-width: 600px;
+}
+
+.project-content h2 {
+  font-size: 28px;
+  color: #15AD90;
+  margin-bottom: 12px;
+}
+
+.project-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card img {
+    width: 100%;
+  }
+}
