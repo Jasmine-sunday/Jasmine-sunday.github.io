@@ -1,0 +1,171 @@
+/* =====================
+   INTRO
+===================== */
+
+.intro {
+  margin-bottom: 80px;
+}
+
+.intro h1 {
+  font-size: 64px;
+  color: #15AD90;
+  line-height: 1.1;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-top: 16px;
+  max-width: 720px;
+}
+
+/* =====================
+   PORTFOLIO SECTION
+===================== */
+
+.portfolio-section {
+  margin-bottom: 80px;
+}
+
+/* =====================
+   BANNER SWIPER
+===================== */
+
+.banner-section {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.banner-swiper {
+  width: 100%;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;          /* Desktop cinematic */
+  margin: 0 auto 64px;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* Swiper slide */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #15AD90;
+}
+
+/* Image (desktop = cropped nicely) */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =====================
+   BANNER CONTENT
+===================== */
+
+.banner-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 64px;
+  color: #ffffff;
+}
+.banner-date {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.banner-text {
+  max-width: 45%;
+}
+
+.banner-text h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.banner-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.banner-image {
+  max-width: 45%;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* =====================
+   SWIPER PAGINATION
+===================== */
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+/* =====================
+   MOBILE (NO CROPPING)
+===================== */
+
+@media (max-width: 768px) {
+
+  /* Intro */
+  .intro h1 {
+    font-size: 42px;
+  }
+
+  /* Banner container */
+  .banner-swiper {
+    aspect-ratio: auto;   /* IMPORTANT */
+    height: auto;
+    margin-bottom: 48px;
+  }
+
+  /* Stack content */
+  .swiper-slide {
+    flex-direction: column;
+    padding: 16px 16px 24px;
+  }
+
+  /* FULL image on mobile */
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* SHOW FULL IMAGE */
+  }
+
+  /* Banner text layout */
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .banner-text,
+  .banner-image {
+    max-width: 100%;
+  }
+
+  .banner-text h2 {
+    font-size: 24px;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+  }
+}

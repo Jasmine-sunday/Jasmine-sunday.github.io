@@ -1,82 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <title>Jasmine Nguyen | Web Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jasmine Nguyen | Web Design Portfolio</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 { line-height: 1.2; }
-    .project {
-      border-top: 1px solid #eee;
-      padding-top: 24px;
-      margin-top: 24px;
-    }
-    img {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 8px;
-      margin: 12px 0;
-    }
-    .tag {
-      display: inline-block;
-      background: #f2f2f2;
-      padding: 4px 10px;
-      margin-right: 6px;
-      border-radius: 12px;
-      font-size: 14px;
-    }
-  </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
+
 <body>
 
-  <h1>Jasmine Nguyen</h1>
-  <p>Web Designer · CMS Content Management · UI Improvement</p>
-
+<header>
   <p>
-    I work on real-world web pages with a focus on clarity, usability, and content structure.
-    Most of my experience is in CMS-based environments (Sitefinity).
+    Contact:
+    <a href="mailto:nqnhu1@email.com">nqnhu1@email.com</a>
   </p>
+  <p>
+    <a href="https://www.linkedin.com/in/hgnu412/" target="_blank">LinkedIn</a> ·
+    <a href="https://github.com/Jasmine-sunday" target="_blank">GitHub</a>
+  </p>
+</header>
 
-  <h2>Selected Work</h2>
-
-  <div class="project">
-    <h3>SUSS Graduate Programmes Pages</h3>
-    <div>
-      <span class="tag">Sitefinity</span>
-      <span class="tag">Content Update</span>
-      <span class="tag">UI Consistency</span>
-    </div>
-    <p>
-      Maintained and updated graduate programme pages, improving content clarity,
-      layout consistency, and navigation within CMS constraints.
-    </p>
-    <p>
-      🔗 <a href="https://www.suss.edu.sg/academics/programmes/graduate-programmes" target="_blank">
-        View live site
-      </a>
-    </p>
-    <img src="images/suss-grad.jpg" alt="SUSS Graduate Programmes page" />
+<nav>
+  <div id="icon">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Jasmine Nguyen logo">
+    </a>
   </div>
 
-  <h2>Skills & Tools</h2>
-  <p>
-    HTML, CSS, CMS (Sitefinity), Content Structuring, Accessibility Awareness,
-    Figma (basic), Collaboration with stakeholders
-  </p>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html" class="active">About Me</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <h2>Contact</h2>
-  <p>
-    Email: your@email.com<br/>
-    LinkedIn: <a href="#">linkedin.com/in/yourprofile</a>
-  </p>
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="intro">
+    <p>Hello, I’m</p>
+    <h1>Jasmine Nguyen</h1>
+    <p>
+      Web designer and content-focused developer with experience working on
+      production CMS-based websites in an institutional environment.
+      I focus on clarity, usability, and maintaining consistency across
+      content-heavy pages.
+    </p>
+  </section>
+
+  <!-- SWIPER / PORTFOLIO -->
+<section class="banner-section">
+
+  <div class="swiper mySwiper banner-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide banner-slide">
+  <div class="banner-content">
+    <div class="banner-text">
+      <span class="banner-date">Dec 2025 — Personal Achievement</span>
+      <h2>Google Gemini Certified Educator</h2>
+      <p>
+        Earned Google’s Gemini Certified Educator credential by demonstrating
+        hands-on proficiency in applying generative AI tools to real-world
+        educational and content design scenarios.
+      </p>
+    </div>
+    <div class="banner-image">
+      <img src="images/banner1.jpg" alt="Google Gemini Certified Educator certificate">
+    </div>
+  </div>
+</div>
+
+      <div class="swiper-slide banner-slide">
+  <div class="banner-content">
+    <div class="banner-text">
+      <span class="banner-date">October 2024 - Personal Achievement</span>
+      <h2>Dell Innovate Fest</h2>
+      <p>
+        Participated in Dell InnovateFest 2024, gaining hands-on exposure to
+        enterprise technology, innovation trends, and real-world industry
+        applications.
+      </p>
+    </div>
+    <div class="banner-image">
+      <img src="images/banner2.jpg" alt="Dell Innovate Fest 2024">
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+</section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">Skills & Tools</h2>
+    <div class="skills">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript (basic)</div>
+      <div class="skill">CMS (Sitefinity)</div>
+      <div class="skill">Content Management</div>
+      <div class="skill">UI Consistency</div>
+      <div class="skill">Accessibility Awareness</div>
+      <div class="skill">Figma (basic)</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>
+      Feel free to reach out via
+      <a href="mailto:nqnhu1@email.com">email</a>
+      or connect on
+      <a href="https://www.linkedin.com/in/hgnu412/" target="_blank">LinkedIn</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Jasmine Nguyen</p>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000, // 5 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    speed: 800,
+  });
+</script>
 
 </body>
 </html>
