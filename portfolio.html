@@ -5,7 +5,6 @@
   <title>Portfolio | Jasmine Nguyen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
@@ -38,13 +37,47 @@
 </nav>
 
 <main>
-
 <section class="portfolio-section">
   <h1 class="section-title">Recent Works</h1>
 
   <div class="project-list">
 
-    <!-- Project 1 -->
+    <article class="project-card">
+      <div class="project-content">
+        <h2>SUSS GS Website Revamp</h2>
+        <p>
+          Redesigned the SUSS Graduate Studies website to improve UX, navigation, mobile optimisation,
+          and interactivity. Key highlights:
+          <ul>
+            <li>Streamlined content for international students</li>
+            <li>Enhanced mobile and desktop navigation</li>
+            <li>Embedded interactive media and testimonials</li>
+          </ul>
+          <strong>Team:</strong> Jasmine (ICT Undergraduate), Yu Hai (Digital Marketing Undergraduate)
+        </p>
+        <p>
+          <a class="btn-video" href="suss-revamp.html">
+            <strong>View Project Page</strong>
+          </a>
+        </p>        
+        </div>
+    <div class="before-after-container">
+          <div class="image-container">
+            <img class="image-after slider-image" src="images/after_1.png" alt="After Revamp" />
+            <img class="image-before slider-image" src="images/before_1.png" alt="Before Revamp" />
+          </div>
+          
+          <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="slider" />
+          
+          <div class="slider-line" aria-hidden="true"></div>
+          <div class="slider-button" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm124.69,8H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32a8,8,0,0,0,0-11.32l-32-32a8,8,0,0,0-11.32,11.32Z"></path>
+            </svg>
+          </div>
+        </div>
+    </article>
+
     <article class="project-card">
       <img src="images/14_M1_194506L_Jasmine_RGB.jpg" alt="Web Banner Design">
       <div class="project-content">
@@ -52,26 +85,36 @@
         <p>
           Designed a promotional web banner to attract tourists to Japan,
           highlighting cultural elements such as samurai heritage, cherry
-          blossom traditions (hanami), and geisha arts.
+          blossom traditions (hanami), and geisha arts. Awarded 
+          <a href="certificates/best-digital-design.pdf" target="_blank" class="cert-link">
+            <strong>Best Digital Design (View Certificate)</strong>
+          </a> at the DMIT End Semester Showcase (2019).
         </p>
       </div>
     </article>
 
-    <!-- Project 3 -->
-    <article class="project-card">
+    <article class="project-card reverse">
       <img src="images/ISS_Project.png" alt="Infocomm System Security Project">
       <div class="project-content">
         <h2>Infocomm System & Security Project</h2>
         <p>
           Developed a practical security-focused system project.
-          Awarded <strong>Best Project Concept & Implementation</strong>
-          at the DMIT End Semester Showcase (2019).
+          Awarded 
+          <a href="certificates/best-project-concept-implementation.pdf" 
+             target="_blank" 
+             class="cert-link">
+            <strong>Best Project Concept & Implementation (View Certificate)</strong>
+          </a> at the DMIT End Semester Showcase (2019).
         </p>
+        <a href="https://youtu.be/ui2SyGrvbAU"
+           target="_blank"
+           class="btn-video">
+          ▶ View Project Video
+        </a>
       </div>
     </article>
 
-    <!-- Project 4 -->
-    <article class="project-card reverse">
+    <article class="project-card">
       <img src="images/SUP.png" alt="Smart Urban Planter">
       <div class="project-content">
         <h2>Smart Urban Planter (SUP)</h2>
@@ -83,8 +126,7 @@
       </div>
     </article>
 
-    <!-- Project 5 -->
-    <article class="project-card">
+    <article class="project-card reverse">
       <img src="images/Electionic.jpg" alt="Electronic Control System">
       <div class="project-content">
         <h2>Master / Slave Electronic Control System</h2>
@@ -98,12 +140,27 @@
 
   </div>
 </section>
-
 </main>
 
 <footer>
-  <p>© 2025 Jasmine Nguyen · Built with HTML & CSS</p>
+  <p>© 2025 Jasmine Nguyen</p>
 </footer>
+
+<script>
+  // Support multiple before-after slider instances on the page
+  document.querySelectorAll('.before-after-container').forEach(container => {
+    const slider = container.querySelector('.slider');
+    if (!slider) return;
+
+    const update = (value) => {
+      container.style.setProperty('--position', value + '%');
+    };
+
+    // initialize and attach listener
+    update(slider.value || 50);
+    slider.addEventListener('input', (e) => update(e.target.value));
+  });
+</script>
 
 </body>
 </html>
