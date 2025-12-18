@@ -1,0 +1,45 @@
+.project-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header-banner {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.header-banner img {
+  width: 100%;
+  height: auto;          
+  display: block;
+  object-fit: contain;   
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header-banner img {
+    max-height: 220px;
+  }
+}
+.case-section {
+  margin-bottom: 2.5rem;
+}
+
+.case-section h2 {
+  color: #15AD90;
+  margin-bottom: 0.75rem;
+}
+
+.case-section p {
+  margin-bottom: 0.75rem;
+  max-width: 800px; /* improves readability */
+}
+
+.case-section ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.case-section li {
+  margin-bottom: 0.4rem;
+}
