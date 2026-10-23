@@ -1,0 +1,78 @@
+/* The site follows the visitor's current OS/browser appearance preference. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ink: #f2f6f4;
+    --muted: #bac6c1;
+    --paper: #171c1a;
+    --white: #222a27;
+    --teal: #42cfb0;
+    --mint: #203a32;
+    --line: #35443e;
+    --coral: #ff668b;
+    --pink: #402630;
+    --pc-ink: #f2f6f4;
+    --pc-green: #42cfb0;
+    --pc-pink: #ff668b;
+    --pc-mint: #203a32;
+    --pc-blush: #402630;
+  }
+
+  body { background: var(--paper); color: var(--ink); }
+  .topbar { background: #101412; }
+  .site-nav { background: var(--paper); }
+  .brand-mark, .nav-links a, .social-links a { color: var(--ink); }
+  .brand-mark small, footer, .story-lede, .video-caption { color: var(--muted); }
+  .nav-links a:hover, .nav-links a.active { background: var(--mint); color: var(--teal); }
+  .button { color: #10201b; }
+  .button-light { color: var(--ink); }
+
+  .hero-proof, .focus-card, .project-card, .competition-timeline div,
+  .competition-photo, .impact-project, .home-card, .org-logo,
+  .contact-form input, .contact-form textarea { background-color: var(--white); color: var(--ink); }
+  .hero-proof strong, .home-card-copy, .home-card-copy h3, .project-content,
+  .project-content h2, .timeline h3, .focus-card h3, .competition-story,
+  .competition-team, .case-section, .impact-project { color: var(--ink); }
+  .home-card p, .home-card-copy p, .story-text, .story-text p,
+  .contact-panel > p:not(.eyebrow), .project-header > p:not(.eyebrow),
+  .impact-story-copy, .impact-hero > p:not(.eyebrow), .competition-photo figcaption,
+  .competition-timeline small { color: var(--muted); }
+  .home-card, .project-card, .focus-card, .impact-project, .competition-photo,
+  .timeline, .timeline article, .org-logo { border-color: var(--line); }
+  .home-work, .about-section, .portfolio-section, .competition-page,
+  .impact-page, .suss-project-page { color: var(--ink); }
+  .competition-timeline div, .competition-photo { background-color: var(--white); }
+  .project-header, .contact-panel, .impact-project.dell-project { background-color: var(--mint); color: var(--ink); }
+  .case-section { background-color: var(--pink); }
+  .competition-facts span, .competition-tags a, .impact-feature-photo,
+  .impact-gallery figure { background-color: var(--pink); }
+  .dell-project .impact-tags a { background-color: var(--white); }
+  .contact-form input, .contact-form textarea { border-color: #42cfb066; }
+  .contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--muted); }
+  .org-logo img { border-radius: 50%; }
+  .pc-panel { background: #202724; color: var(--ink); border-color: #42cfb055; }
+  .pc-launch { background: #222; color: #fff; }
+  .pc-launch:hover { background: var(--teal); }
+  .pc-flower-face::before { background: #222; box-shadow: 6px 0 #222; }
+  .pc-header { background: linear-gradient(125deg,#203a32,#402630); }
+  .pc-bot { background: #2d3733; color: var(--ink); }
+  .pc-user { color: #10201b; }
+  .pc-quick button { color: var(--ink); background: #402630; }
+  .pc-form { border-color: #ffffff1a; }
+  .pc-form input { color: var(--ink); background: #171c1a; border-color: #ffffff30; }
+  .pc-form input::placeholder, .pc-footnote, .pc-pending { color: var(--muted); }
+  .pc-action { color: var(--teal); }
+  .pc-close { color: var(--ink); }
+  .competition-page .project-header > p:not(.eyebrow),
+  .social-impact-page .impact-hero > p:not(.eyebrow),
+  .social-impact-page .impact-story-copy,
+  .social-impact-page .impact-feature-photo figcaption,
+  .social-impact-page .impact-gallery figcaption { color: var(--muted); }
+  .competition-page .competition-timeline div,
+  .competition-page .competition-photo,
+  .social-impact-page .impact-project,
+  .suss-project-page .project-card { background-color: var(--white); }
+  .social-impact-page .impact-project.dell-project { background-color: var(--mint); }
+  .competition-page .competition-photo.photo-wide img,
+  .social-impact-page .impact-gallery img { background-color: #171c1a; }
+}
