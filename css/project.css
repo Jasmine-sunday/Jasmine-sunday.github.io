@@ -43,3 +43,68 @@
 .case-section li {
   margin-bottom: 0.4rem;
 }
+
+.project-header{padding:38px 24px;border-radius:18px;background:var(--mint);color:var(--ink)}
+.project-header h1{font-family:Manrope,sans-serif;letter-spacing:-.04em}
+.case-section h2{color:var(--teal)}
+.case-section{padding:24px;border-left:4px solid var(--coral);border-radius:0 14px 14px 0;background:var(--pink)}
+
+.competition-banner img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+.competition-page{max-width:1120px}
+.competition-page .project-header{margin:10px 0 42px;text-align:left}
+.competition-page .project-header h1{max-width:850px;margin:12px 0;font-size:clamp(34px,5vw,58px);line-height:1.08}
+.competition-page .project-header>p:not(.eyebrow){max-width:700px;font-size:18px;color:#444}
+.competition-facts{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.competition-facts span{display:flex;flex-direction:column;gap:3px;min-width:150px;padding:12px 16px;border-radius:10px;background:var(--pink);font-size:13px}
+.competition-facts strong{color:var(--teal);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.competition-story h2,.competition-team h2{margin:5px 0 16px;color:var(--ink)}
+.competition-story p:not(.eyebrow),.competition-team p:not(.eyebrow){max-width:900px;line-height:1.85}
+.competition-role{background:var(--mint);border-left-color:var(--teal)}
+.competition-role h2{margin:5px 0 12px}
+.competition-role>p:not(.eyebrow){max-width:900px;line-height:1.85}
+.competition-timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.competition-timeline div{display:grid;gap:4px;padding:15px;border-radius:10px;background:white}
+.competition-timeline span{color:var(--coral);font-size:11px;font-weight:700;letter-spacing:.12em}
+.competition-timeline strong{font:700 16px Manrope,sans-serif}
+.competition-timeline small{color:#555;font-size:12px}
+.competition-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:38px 0 48px}
+.competition-photo{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:white}
+.competition-photo img{display:block;width:100%;height:330px;object-fit:cover}
+.competition-photo.photo-wide{grid-column:1/-1}
+.competition-photo.photo-wide img{height:auto;max-height:580px;object-fit:contain;background:#222}
+.competition-photo figcaption{padding:12px 16px;color:#444;font-size:13px}
+.competition-team{margin-top:8px}
+.competition-team a{color:var(--teal)}.competition-team a:hover{color:var(--coral)}
+.competition-tags{display:flex;flex-wrap:wrap;gap:9px;margin:28px 0}
+.competition-tags a{padding:7px 11px;border-radius:999px;background:var(--mint);font-size:12px;font-weight:700}
+.competition-tags a:nth-child(even){background:var(--pink)}
+.return-link{margin-top:4px}
+@media(max-width:680px){.competition-page{padding-top:32px}.competition-banner img{width:100%;height:auto;max-height:none;object-fit:contain}.competition-facts span{flex:1 1 42%;min-width:130px}.competition-gallery{grid-template-columns:1fr;gap:14px}.competition-photo.photo-wide{grid-column:auto}.competition-photo img{height:280px}.competition-photo.photo-wide img{height:auto;max-height:400px}.competition-page .project-header{padding:28px 20px}.competition-timeline{grid-template-columns:1fr}}
+
+.social-impact-page{max-width:1120px;padding-top:42px}
+.impact-hero{position:relative;overflow:hidden;margin-bottom:62px;padding:52px 48px;border-radius:24px;background:linear-gradient(120deg,var(--pink),var(--mint));}
+.impact-hero h1{max-width:760px;margin:10px 0 16px;font:800 clamp(38px,6vw,68px)/1.05 Manrope,sans-serif;letter-spacing:-.06em;color:var(--ink)}
+.impact-hero>p:not(.eyebrow){max-width:670px;margin-bottom:22px;color:#444;font-size:17px}
+.impact-heart{position:absolute;right:8%;top:50%;color:var(--coral);font-size:clamp(130px,22vw,240px);line-height:1;opacity:.16;transform:translateY(-50%);text-shadow:10px 10px 0 #15AD9022}
+.impact-hero .button{position:relative;z-index:1}
+.impact-project{margin:0 0 64px;padding:34px;border:1px solid var(--line);border-radius:20px;background:white;scroll-margin-top:20px}
+.impact-project.dell-project{background:var(--mint)}
+.impact-project-heading{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:26px}
+.impact-project-heading h2{max-width:700px;margin-top:8px;font:800 clamp(28px,4vw,42px)/1.12 Manrope,sans-serif;letter-spacing:-.045em;color:var(--ink)}
+.impact-tag{flex:none;padding:8px 12px;border-radius:999px;background:var(--pink);color:var(--ink);font-size:11px;font-weight:700}
+.impact-story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.impact-story-copy{display:grid;gap:16px;color:#444;line-height:1.8}
+.impact-story-copy a{font-weight:600}
+.impact-feature-photo,.impact-gallery figure{overflow:hidden;margin:0;border-radius:14px;background:var(--pink)}
+.impact-feature-photo img{display:block;width:100%;height:100%;min-height:300px;max-height:480px;object-fit:cover}
+.impact-feature-photo figcaption,.impact-gallery figcaption{padding:11px 14px;color:#444;font-size:12px}
+.impact-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.impact-gallery img{display:block;width:100%;height:260px;object-fit:cover}
+.impact-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.impact-tags a{padding:7px 11px;border-radius:999px;background:var(--pink);font-size:11px;font-weight:700}
+.dell-project .impact-tags a{background:white}
+.impact-closing{display:flex;align-items:center;justify-content:center;gap:16px;margin:45px 0 24px;padding:30px;border-radius:16px;background:var(--pink);color:var(--ink);text-align:center}
+.impact-closing span{color:var(--coral);font-size:32px}
+.impact-closing p{font:700 clamp(18px,3vw,24px) Manrope,sans-serif}
+@media(max-width:760px){.impact-hero{padding:36px 25px}.impact-heart{right:-2%;opacity:.12}.impact-project{padding:24px 18px}.impact-project-heading{align-items:flex-start;flex-direction:column}.impact-story-grid{grid-template-columns:1fr}.impact-feature-photo img{min-height:0;height:auto;max-height:420px;object-fit:contain;background:#222}.impact-gallery{gap:10px}.impact-gallery img{height:190px}}
+@media(max-width:500px){.impact-gallery{grid-template-columns:1fr}.impact-gallery img{height:auto;max-height:360px;object-fit:contain;background:#222}.impact-closing{align-items:flex-start}}

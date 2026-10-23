@@ -1,154 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <title>Jasmine Nguyen | Web Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jasmine Nguyen is a software engineer and AI integrator bridging emerging technology and human needs across ASEAN." />
+  <title>Jasmine Nguyen | Software Engineer &amp; AI Integrator</title>
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
+  <header class="topbar">
+    <p><a href="mailto:nqnhu1@gmail.com">nqnhu1@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/hgnu412/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span> ·
+      </span><a href="https://github.com/Jasmine-sunday" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+  </header>
+  <nav class="site-nav" aria-label="Main navigation"><a class="brand-mark" href="index.html"
+      aria-label="Jasmine Nguyen home"><img src="images/logo.png" alt="JN logo" /><span>JASMINE NGUYEN<small>SOFTWARE
+          ENGINEER &amp; AI INTEGRATOR</small></span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main class="home-page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ASEAN Undergraduate Scholar · SUSS</p>
+        <h1>Building technology<br /><span>that brings people forward.</span></h1>
+        <p class="hero-intro">I’m Jasmine Nguyen, a software engineer and AI integrator connecting emerging technology
+          with real human needs.</p>
+        <div class="hero-actions"><a class="button" href="portfolio.html">Explore my work <span
+              aria-hidden="true">↗</span></a><a class="text-link" href="about.html">Get to know me <span
+              aria-hidden="true">→</span></a></div>
+        <div class="hero-proof">
+          <div><strong>2nd</strong><span>Global · Huawei ICT<br />Competition Finals</span></div>
+          <div><strong>ASEAN</strong><span>Digital impact<br />in focus</span></div>
+        </div>
+      </div>
+      <section class="banner-section" aria-label="Featured highlights and credentials">
+        <div class="swiper mySwiper banner-swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide banner-slide">
+              <div class="banner-content">
+                <div class="banner-text">
+                  <span class="banner-date">June 2026 — Global Recognition</span>
+                  <h2>2nd Prize Worldwide: Huawei ICT Competition</h2>
+                  <p>Represented Singapore at the Global Finals in Shenzhen, China (Cloud Track). Architected
+                    high-availability multi-region cloud topology with automated failover and AI performance monitoring
+                    under high-pressure simulation constraints.</p>
+                </div>
+                <div class="banner-image"><img src="images/huawei-ict-final-global.jpg"
+                    alt="Huawei ICT Competition Global Finals" /></div>
+              </div>
+            </article>
+            <article class="swiper-slide banner-slide">
+              <div class="banner-content">
+                <div class="banner-text">
+                  <span class="banner-date">April 2026 — Tech-for-Good</span>
+                  <h2>Her Code, Her Cause: Patient Care Portal</h2>
+                  <p>Prototyped an empathetic, mobile-first health companion app for breast cancer patients. Integrated
+                    streamlined treatment tracking and community support features, earning finalist recognition for
+                    cognitive ergonomics and accessible UX.</p>
+                </div>
+                <div class="banner-image"><img src="images/hercode-hercause.jpeg"
+                    alt="Her Code, Her Cause hackathon finalist" /></div>
+              </div>
+            </article>
+            <div class="swiper-slide banner-slide">
+              <div class="banner-content">
+                <div class="banner-text">
+                  <span class="banner-date">Professional Credentials</span>
+                  <h2>AI & Cloud Specializations</h2>
+                  <p>
+                    Certified AWS Cloud Practitioner, Huawei Certified ICT Associate, and Google Gemini Certified
+                    Educator. Experienced in auditing regional LLM datasets at AI Singapore and engineering enterprise
+                    low-code systems.
+                  </p>
+                </div>
+                <div class="banner-image">
+                  <img src="images/banner1.jpg" alt="Google Gemini and Cloud Credentials">
+                </div>
+              </div>
+            </div>
+            <article class="swiper-slide banner-slide">
+              <div class="banner-content">
+                <div class="banner-text">
+                  <span class="banner-date">October 2024 — Hackathon with a Heart</span>
+                  <h2>Dell Innovate Fest</h2>
+                  <p>Participated in Dell InnovateFest 2024, gaining hands-on exposure to
 
-<header>
-  <p>
-    Contact:
-    <a href="mailto:nqnhu1@email.com">nqnhu1@email.com</a>
-  </p>
-  <p>
-    <a href="https://www.linkedin.com/in/hgnu412/" target="_blank">LinkedIn</a> ·
-    <a href="https://github.com/Jasmine-sunday" target="_blank">GitHub</a>
-  </p>
-</header>
+                    enterprise technology, innovation trends, and real-world industry
 
-<nav>
-  <div id="icon">
-    <a href="index.html">
-      <img src="images/logo.png" alt="Jasmine Nguyen logo">
-    </a>
-  </div>
-
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="about.html" class="active">About Me</a></li>
-  </ul>
-</nav>
-
-<main>
-
-  <!-- HOME -->
-  <section id="home" class="intro">
-    <p>Hello, I’m</p>
-    <h1>Jasmine Nguyen</h1>
-    <p>
-      Web designer and content-focused developer with experience working on
-      production CMS-based websites in an institutional environment.
-      I focus on clarity, usability, and maintaining consistency across
-      content-heavy pages.
-    </p>
-  </section>
-
-  <!-- SWIPER / PORTFOLIO -->
-<section class="banner-section">
-
-  <div class="swiper mySwiper banner-swiper">
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide banner-slide">
-  <div class="banner-content">
-    <div class="banner-text">
-      <span class="banner-date">Dec 2025 — Personal Achievement</span>
-      <h2>Google Gemini Certified Educator</h2>
-      <p>
-        Earned Google’s Gemini Certified Educator credential by demonstrating
-        hands-on proficiency in applying generative AI tools to real-world
-        educational and content design scenarios.
-      </p>
-    </div>
-    <div class="banner-image">
-      <img src="images/banner1.jpg" alt="Google Gemini Certified Educator certificate">
-    </div>
-  </div>
-</div>
-
-      <div class="swiper-slide banner-slide">
-  <div class="banner-content">
-    <div class="banner-text">
-      <span class="banner-date">October 2024 - Personal Achievement</span>
-      <h2>Dell Innovate Fest</h2>
-      <p>
-        Participated in Dell InnovateFest 2024, gaining hands-on exposure to
-        enterprise technology, innovation trends, and real-world industry
-        applications.
-      </p>
-    </div>
-    <div class="banner-image">
-      <img src="images/banner2.jpg" alt="Dell Innovate Fest 2024">
-    </div>
-  </div>
-</div>
-
-
-    </div>
-
-    <div class="swiper-pagination"></div>
-  </div>
-
-</section>
-
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 class="section-title">Skills & Tools</h2>
-    <div class="skills">
-      <div class="skill">HTML5</div>
-      <div class="skill">CSS3</div>
-      <div class="skill">JavaScript (basic)</div>
-      <div class="skill">CMS (Sitefinity)</div>
-      <div class="skill">Content Management</div>
-      <div class="skill">UI Consistency</div>
-      <div class="skill">Accessibility Awareness</div>
-      <div class="skill">Figma (basic)</div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>
-      Feel free to reach out via
-      <a href="mailto:nqnhu1@email.com">email</a>
-      or connect on
-      <a href="https://www.linkedin.com/in/hgnu412/" target="_blank">LinkedIn</a>.
-    </p>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2025 Jasmine Nguyen</p>
-</footer>
-
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 5000, // 5 seconds
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    speed: 800,
-  });
-</script>
-
+                    applications.</p>
+                </div>
+                <div class="banner-image"><img src="images/banner2.jpg" alt="Google Gemini and cloud credentials" />
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </section>
+    <section class="home-work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Selected work &amp; milestones</p>
+          <h2 class="section-title">Proof in the projects.</h2>
+        </div><a class="text-link" href="portfolio.html">View all work <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="home-cards">
+        <a class="home-card featured-card" href="suss-revamp.html"><img src="images/Webiste-revamp-suss.png"
+            alt="SUSS Graduate Studies website after its redesign" />
+          <div class="home-card-copy"><span class="card-kicker">WEB EXPERIENCE · SUSS</span>
+            <h3>Making graduate study journeys clearer.</h3>
+            <p>Website redesign, content structure, and ongoing UX improvements.</p><span class="card-arrow"
+              aria-hidden="true">↗</span>
+          </div>
+        </a>
+        <article class="home-card award-card">
+          <img src="images/Dongguan Practice_1.jpg"
+            alt="SUSS Graduate Studies website after its redesign" />
+          <div class="home-card-copy"><span class="card-kicker">TEAM ACHIEVEMENT</span>
+            <h3>Second Prize, globally.</h3>
+            <p>Led cloud architecture as part of an international competition team.</p>
+            <a class="text-link award-link" href="huawei-competition.html">Read the competition story <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <a class="home-card project-card-home" href="social-impact.html#her-code"><img src="images/hercode-teamwork.png"
+            alt="Jasmine's hackathon team collaborating on a social impact app" />
+          <div class="home-card-copy"><span class="card-kicker">SOCIAL IMPACT · SOFTWARE</span>
+            <h3>Technology with empathy built in.</h3>
+            <p>Creating practical, accessible tools for people and communities.</p><span class="card-arrow"
+              aria-hidden="true">↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="home-contact">
+      <div>
+        <p class="eyebrow">Have an idea worth building?</p>
+        <h2>Let’s make technology<br />work for people.</h2>
+      </div><a class="button button-light" href="mailto:nqnhu1@gmail.com">Start a conversation <span
+          aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Jasmine Nguyen <span>·</span> Built with purpose.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      speed: 800,
+    });
+  </script>
 </body>
+
 </html>

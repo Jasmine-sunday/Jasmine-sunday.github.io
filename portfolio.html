@@ -11,36 +11,45 @@
 
 <body>
 
-<header>
-  <p>
-    Contact:
-    <a href="mailto:nqnhu1@email.com">nqnhu1@email.com</a>
-  </p>
-  <p>
-    <a href="https://www.linkedin.com/in/hgnu412/" target="_blank">LinkedIn</a> ·
-    <a href="https://github.com/Jasmine-sunday" target="_blank">GitHub</a>
-  </p>
+<header class="topbar">
+    <p><a href="mailto:nqnhu1@gmail.com">nqnhu1@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/hgnu412/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span> ·
+      </span><a href="https://github.com/Jasmine-sunday" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 </header>
-
-<nav>
-  <div id="icon">
-    <a href="index.html">
-      <img src="images/logo.png" alt="Jasmine Nguyen logo">
-    </a>
-  </div>
-
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand-mark" href="index.html" aria-label="Jasmine Nguyen home"><img src="images/logo.png" alt="JN logo"><span>JASMINE NGUYEN<small>SOFTWARE ENGINEER &amp; AI INTEGRATOR</small></span></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
-    <li><a href="portfolio.html" class="active">Portfolio</a></li>
-    <li><a href="about.html">About Me</a></li>
+    <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
   </ul>
 </nav>
 
 <main>
 <section class="portfolio-section">
   <h1 class="section-title">Recent Works</h1>
-
+  <br>
   <div class="project-list">
+
+    <article class="project-card">
+      <div class="project-content">
+        <span class="card-kicker">GLOBAL FINALS · CLOUD TRACK · JUNE 2026</span>
+        <h2>Huawei ICT Competition 2025–2026</h2>
+        <p>Our team earned Second Prize at the Global Final in Shenzhen after a ten-month journey from Singapore through the APAC regionals. Explore the story, team, and competition photos.</p>
+        <a class="btn-video" href="huawei-competition.html"><strong>View Competition Story</strong></a>
+      </div>
+      <img src="images/huawei-global-stage.png" alt="Huawei ICT Competition Global Final highlights and Second Prize medals" />
+    </article>
+
+    <article class="project-card" id="her-code">
+      <div class="project-content">
+        <span class="card-kicker">SOCIAL IMPACT · SOFTWARE · HACKATHONS</span>
+        <h2>Technology with empathy built in.</h2>
+        <p>Two team projects explored how thoughtful software can support people and strengthen community: an emotional companion app for breast cancer patients and IM-FIT, a social activity app concept for seniors.</p>
+        <a class="btn-video" href="social-impact.html"><strong>Explore Social Impact Projects</strong></a>
+      </div>
+      <img src="images/hercode-teamwork.png" alt="Hackathon teammates collaborating on a social impact app" />
+    </article>
 
     <article class="project-card">
       <div class="project-content">
@@ -145,9 +154,9 @@
 </section>
 </main>
 
-<footer>
-  <p>© 2025 Jasmine Nguyen</p>
-</footer>
+  <footer>
+    <p>© 2026 Jasmine Nguyen <span>·</span> Built with purpose.</p>
+  </footer>
 
 <script>
   // Support multiple before-after slider instances on the page
